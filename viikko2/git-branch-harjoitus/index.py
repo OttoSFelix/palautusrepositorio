@@ -12,3 +12,4 @@ print(f"{summa(x, y)}") # muutos mainissa
 print(f"{erotus(x, y)}") # muutos mainissa
 
 logger("lopetetaan") # lisäys bugikorjaus-branchissa
+print("goodbye!")
