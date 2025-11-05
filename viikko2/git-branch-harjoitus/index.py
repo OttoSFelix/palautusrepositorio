@@ -1,5 +1,5 @@
 # tehdään alussa importit
-
+# lisätään tehtävän 13 varten muutos
 from logger import logger
 from summa import summa
 from erotus import erotus
