@@ -251,9 +251,7 @@ class TestKauppa(unittest.TestCase):
         # alustetaan kauppa
         kauppa = Kauppa(self.varasto_mock, self.pankki_mock, self.viitegeneraattori_mock)
 
-        # tehdään ostokset
         kauppa.aloita_asiointi()
-        # lisätään ostoskoriin tuote, jonka id on 1
         kauppa.lisaa_koriin(2)
 
         self.varasto_mock.hae_tuote.assert_not_called()
