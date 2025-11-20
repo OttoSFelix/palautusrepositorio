@@ -239,14 +239,12 @@ class TestKauppa(unittest.TestCase):
             if tuote_id == 2:
                 return 0
 
-        # tehdään toteutus hae_tuote-metodille
         def varasto_hae_tuote(tuote_id):
             if tuote_id == 1:
                 return Tuote(1, "maito", 5)
             elif tuote_id == 2:
                 return Tuote(2, 'peruna', 3)
 
-        # otetaan toteutukset käyttöön
         self.varasto_mock.saldo.side_effect = varasto_saldo
         self.varasto_mock.hae_tuote.side_effect = varasto_hae_tuote
 
