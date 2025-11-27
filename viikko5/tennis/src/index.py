@@ -2,24 +2,12 @@ from tennis_game import TennisGame
 
 
 def main():
-    game = TennisGame("player1", "player2")
+    game = TennisGame("p1", "p2")
 
-    print(game.get_score())
-
-    game.won_point("player1")
-    print(game.get_score())
-
-    game.won_point("player1")
-    print(game.get_score())
-
-    game.won_point("player2")
-    print(game.get_score())
-
-    game.won_point("player1")
-    print(game.get_score())
-
-    game.won_point("player1")
-    print(game.get_score())
+    while True:
+        point = input('Point won by:')
+        game.won_point(point)
+        print(game.get_score())
 
 
 if __name__ == "__main__":
